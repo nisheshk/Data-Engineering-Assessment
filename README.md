@@ -1,4 +1,26 @@
 <h3> Data Engineering Assessment </h3>
+<h4> The documents folder contains </h4><br/>
+<ul>
+<li>My assumptions for this project </li>
+<li>My Approach on Scaling to Larger Datasets</li>
+<li>Challenges working on a remote environment </li>
+</ul>
+<h4> The data_model folder contains </h4><br/>
+<ul>
+<li>Database Schema for the project </li>
+</ul>
+<h4> The jupyter_notebook_scripts folder contains </h4><br/>
+<ul>
+<li>Initial Data Analysis and Exploration notebook file </li>
+</ul>
+<h4> The apis folder contains </h4><br/>
+<ul>
+<li>Python based Rest API to provide an endpoint that returns the mean and median temperature </li>
+</ul>
+<h4> The etl_scripts folder contains </h4><br/>
+<ul>
+<li>Scripts to load dim and fact tables </li>
+</ul>
 
 <h4> Steps to run the project </h4>
 
@@ -38,3 +60,4 @@ It returns the mean and median temperature for that day.<br/><br/>
 <code>apis\weather_project\weather_station_readings\apis\views</code><br/>
 <code>apis\weather_project\weather_station_readings\models.py</code><br/>
 <code>apis\weather_project\weather_project\settings.py</code><br/>
+<br/>
