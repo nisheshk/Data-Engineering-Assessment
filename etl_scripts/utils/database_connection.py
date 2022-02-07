@@ -5,10 +5,27 @@ Created by: Nishesh Kalakheti
 Created on: 2nd Feb, 2022
 """
 
-from sqlalchemy import create_engine
-from .log import logger
-import pandas as pd
+from    sqlalchemy import create_engine
+from    .log import logger
+import  configparser
+import  pandas as pd
 
+try:
+    logger.info('Reading config parameters')
+
+    config = configparser.ConfigParser()
+    config.read('config.ini')
+
+    username = config['mysql']['username']
+    password = config['mysql']['password']
+    host = config['mysql']['host']
+
+
+    logger.info('Reading config parameters completed')
+
+except Exception as e:
+    logger.error('Error -> ' + str(e), exc_info=True)
+    raise
 
 def mysql_db_connector(func):
     """
@@ -31,7 +48,7 @@ def mysql_db_connector(func):
         try:
 
             #Database connection string to connect to database
-            db_connection_str = 'mysql+pymysql://root:test@localhost/'\
+            db_connection_str = f'mysql+pymysql://{username}:{password}@{host}/'\
                                 'TEALBOOK_ASSESSMENT'
 
             # Creates the engine to connect to the MySQL database
