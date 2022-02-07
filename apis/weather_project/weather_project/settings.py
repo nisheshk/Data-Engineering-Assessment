@@ -20,6 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+#Ideally we should create the env variable for secret key
 SECRET_KEY = 'django-insecure-(n7+t&nfg$9p62qt#w9muce+$s%z=oe9v&2sqzm^97y*1+ye1%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -76,6 +77,7 @@ WSGI_APPLICATION = 'weather_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#Ideally we should create env variables for the username, password
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
