@@ -19,7 +19,7 @@
 <code> python load_fact_weather_city_daily.py  </code><br/><br/>
 <code> python load_fact_weather_daily.py  </code><br/><br/>
 <code> python load_mv_fact_weather_daily.py  </code><br/><br/>
-5. If you have MySQL client installed, you can connect to the GCP CLoudSQL using the credentials below to look at the data:
+5. If you have MySQL client installed, you can connect to the GCP CLoudSQL using the credentials below to look at the data:<br/><br/>
 <code> host: 34.124.113.76  </code><br/>
 <code> username: root  </code><br/>
 <code> password: tealbook_assessment </code><br/><br/>
@@ -29,10 +29,11 @@
 3. Install the package using the requirements.txt file<br/><br/>
 <code> pip install -r requirements.txt </code><br/><br/>
 4. Run the project using<br/><br/>
-<code> pip install -r requirements.txt </code><br/><br/>
+<code> python manage.py runserver </code><br/><br/>
 5. Send POST request to <br/><br/>
 <code>http://127.0.0.1:8000/weather_station_reading/daily_reading/</code><br/>
 <code>Request JSON Body Example: {"date":"2021-01-13"}</code><br/><br/>
+It returns the mean and median temperature for that day.<br/><br/>
 6. if you want to nagivate to the important files for this  API, <br/><br/>
 <code>apis\weather_project\weather_station_readings\apis\views</code><br/>
 <code>apis\weather_project\weather_station_readings\models.py</code><br/>
