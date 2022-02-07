@@ -79,11 +79,10 @@ WSGI_APPLICATION = 'weather_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tealbook_assessment',
+        'NAME': 'TEALBOOK_ASSESSMENT',
         'USER': 'root',
-        'PASSWORD': 'test',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
+        'PASSWORD': 'tealbook_assessment',
+        'HOST': '34.124.113.76',   # Or an IP Address that your DB is hosted on
     }
 }
 
